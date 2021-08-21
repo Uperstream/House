@@ -176,9 +176,9 @@ class LoadModelDemo {
     light.shadow.camera.right = -100;
     light.shadow.camera.top = 100;
     light.shadow.camera.bottom = -100;
-    this._scene.add(light);
+    //this._scene.add(light);
 
-    light = new THREE.AmbientLight(0xFFFFFF, 4.0);
+    //light = new THREE.AmbientLight(0xFFFFFF, 4.0);
     this._scene.add(light);
 
     const controls = new OrbitControls(
@@ -187,15 +187,15 @@ class LoadModelDemo {
     controls.update();
 
     const loader = new THREE.CubeTextureLoader();
-    // const texture = loader.load([
-    //     './resources/px.png',
-    //     './resources/nx.png',
-    //     './resources/py.png',
-    //     './resources/ny.png',
-    //     './resources/pz.png',
-    //     './resources/nz.png',
-    // ]);
-    // this._scene.background = texture;
+    const texture = loader.load([
+        './resources/px.png',
+        './resources/nx.png',
+        './resources/py.png',
+        './resources/ny.png',
+        './resources/pz.png',
+        './resources/nz.png',
+    ]);
+    this._scene.background = texture;
 
     const plane = new THREE.Mesh(
         new THREE.PlaneGeometry(100, 100, 10, 10),
