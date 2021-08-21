@@ -178,7 +178,7 @@ class LoadModelDemo {
     light.shadow.camera.bottom = -100;
     //this._scene.add(light);
 
-    //light = new THREE.AmbientLight(0xFFFFFF, 4.0);
+    light = new THREE.AmbientLight(0xFFFFFF, 4.0);
     this._scene.add(light);
 
     const controls = new OrbitControls(
