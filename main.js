@@ -176,7 +176,7 @@ class LoadModelDemo {
     light.shadow.camera.right = -100;
     light.shadow.camera.top = 100;
     light.shadow.camera.bottom = -100;
-    this._scene.add(light);
+//     this._scene.add(light);
 
     light = new THREE.AmbientLight(0xFFFFFF, 4.0);
     this._scene.add(light);
